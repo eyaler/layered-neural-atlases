@@ -102,7 +102,7 @@ def main(config):
     vid_root = data_folder.parent
 
     results_folder = Path(
-        f'./{results_folder_name}/{vid_name}_{datetime.utcnow().strftime("%m_%d_%Y__%H_%M_%S_%f")}{add_to_experiment_folder_name}')
+        f'./{results_folder_name}')
 
     results_folder.mkdir(parents=True, exist_ok=True)
     with open('%s/config.json' % results_folder, 'w') as json_file:
